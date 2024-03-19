@@ -5,8 +5,8 @@ const Navbar = () => {
   const [click, getClick] = useState(false);
 
   return (
-    <div className="container mx-auto p-2 text-md my-2 md:text-2xl rounded flex justify-between items-center w-3/4">
-      <div className="h-12 w-12 md:w-14 md:h-14 flex justify-center items-center object-fill font-bold cursor-pointer">
+    <div className="container flex items-center justify-between w-3/4 p-2 mx-auto my-2 rounded text-md md:text-2xl">
+      <div className="flex items-center justify-center object-fill w-12 h-12 font-bold cursor-pointer md:w-14 md:h-14">
         <img
           className="object-fill"
           src="https://images-platform.99static.com//979ew2eYmqF1PQhuf9MFQTjWn84=/0x0:1058x1058/fit-in/500x500/projects-files/49/4991/499142/20cfa402-5689-4eea-be2e-08406663e87d.jpg"
@@ -14,7 +14,7 @@ const Navbar = () => {
         />
         manage
       </div>
-      <div className="lg:flex space-x-6 hidden ">
+      <div className="hidden space-x-6 lg:flex ">
         <a href="" className="hover:text-darkGrayishBlue">
           Pricing
         </a>
@@ -35,7 +35,7 @@ const Navbar = () => {
         Get Products
       </a>
 
-      <div className="focus:outline-none block relative lg:hidden ">
+      <div className="relative block focus:outline-none lg:hidden ">
         <button id='menuBtn'
           onClick={() => {
             return getClick(!click);
@@ -47,8 +47,8 @@ const Navbar = () => {
         </button>
 
         {click && (
-          <div className="absolute flex flex-col space-y-4 bg-transparent rounded-lg mt-3 right-2 font-bold bg-red-300 p-3 text-center transition-all duration-100 z-3" id='menu'>
-            <a href="#" className="hover:text-darkGrayishBlue mt-2">
+          <div className="absolute flex flex-col p-3 mt-3 space-y-4 font-bold text-center transition-all duration-100 rounded-lg bg-neutral-500 right-2 z-3 " id='menu'>
+            <a href="#" className="mt-2 hover:text-darkGrayishBlue">
               Pricing
             </a>
             <a href="#" className="hover:text-darkGrayishBlue">
