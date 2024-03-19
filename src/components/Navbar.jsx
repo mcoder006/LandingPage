@@ -5,7 +5,7 @@ const Navbar = () => {
   const [click, getClick] = useState(false);
 
   return (
-    <div className="container flex items-center justify-between w-3/4 p-2 mx-auto my-2 rounded text-md md:text-2xl">
+    <div className="container sticky top-0 flex items-center justify-between w-3/4 p-2 mx-auto my-2 rounded text-md md:text-2xl">
       <div className="flex items-center justify-center object-fill w-12 h-12 font-bold cursor-pointer md:w-14 md:h-14">
         <img
           className="object-fill"
