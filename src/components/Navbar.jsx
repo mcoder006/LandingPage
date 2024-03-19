@@ -47,7 +47,7 @@ const Navbar = () => {
         </button>
 
         {click && (
-          <div className="absolute flex flex-col p-3 mt-3 space-y-4 font-bold text-center transition-all duration-100 rounded-lg bg-neutral-500 right-2 z-3 " id='menu'>
+          <div className="absolute flex flex-col p-3 mt-3 space-y-4 font-bold text-center transition-all origin-top rounded-lg bg-neutral-500 right-2" id='menu'>
             <a href="#" className="mt-2 hover:text-darkGrayishBlue">
               Pricing
             </a>
